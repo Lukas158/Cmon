@@ -1,0 +1,108 @@
+@import "vars";
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+header {
+    position: fixed;
+    box-sizing: border-box;
+    background-color: var(--juoda);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 72px;
+    max-width: 1400px;
+    width: 100%;
+    z-index: 9999;
+    .smalllogo {
+        background: url(images/smalllogo.png);
+        width: 119.37px;
+        height: 52.06px;}
+    ul { 
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        a {
+            color: var(--balta);
+            text-decoration: none;
+            padding: 21px;
+            
+        }
+    }
+}
+.shade {
+    background: url(images/shade.png);
+    height: 639px;
+    width: 1400px;
+    width: 100%;
+    position: absolute;
+}
+.miestas {
+    background: url(images/miestas.png);
+    height: 639px;
+    width: 1400px;
+    width: 100%;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 138px;
+    position: absolute;
+    font-size: 36px;
+    color: var(--balta);
+
+    p { 
+        padding-left: 200px;
+    }
+.logo {
+    background: url(images/whitelogo.png);
+    width: 246.74px;
+    height: 107.61px;
+    
+}
+}
+
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+    width: 1400px;
+    height: 105px;
+    width: 100%;
+    background-color: var(--balta);
+    p {
+        color: var(--juoda);
+        span {
+            color: grey;
+        }
+    }
+}
+.facebook {
+    background: url(images/facebook.png);
+    width: 16.22px;
+    height: 30px;
+}
+.instagram {
+    background: url(images/instagram.png);
+    width: 30px;
+    height: 30px;
+}
+.twitter {
+    background: url(images/twitter.png);
+    width: 36.07px;
+    height: 30px;
+}
+.pinterest {
+    background: url(images/pinterest.png);
+    width: 24.37px;
+    height: 30px;
+}
+.group {
+    background: url(images/group.png);
+    width: 30px;
+    height: 30px;
+}
