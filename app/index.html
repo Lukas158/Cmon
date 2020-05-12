@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
 </head>
 <body>
     <main>
@@ -18,22 +22,113 @@
                 <a href>Contact</a>
             </ul>
         </header>
-            <div class="shade"></div>
-                <div class="maintext">
-                    <div class="logo"></div>
-                    <p>Explained propriety<br>of out perpetual to you</p>
+            
+            
+            <div class="logo"></div>
+           <div class="bandymas">
+            <div class="subbox">
+                <div class="top">Try Your <span>FREE</span> Trial Today</div>
+                <div class="mid">
+                    <span>
+                    <form action="/action_page.php" method="get" name="myForm">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="button" onclick="formSubmit()" value="Send form data!">
+                    </form>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">MONTHLY</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">YEARLY</label><br>
+                    </span>
                 </div>
-            <div class="miestas"></div>
+                <div class="bottom">GET STARTED</div>
+                </div>
+               
+            
+            <div class="maintext">
+                <p>Explained propriety<br>of out perpetual to you</p>
+            </div>
+            <div class="whiteline"></div>
+            <div class="maintext2">
+                <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.<br>
+                Proceed how any engaged visitor. Explained propriety of out perpetual his you.<br>
+                Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+            </div>
+            <div class="downloadbutton"><a href>DOWNLOAD</a></div>
+        </div>
+            <div class="miestas">
+                <div class="shade"></div>
+            </div>
         <div class="socialmedia">
             <p>Social Media <br>
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                 Aenean euismod bibendum laoreet.</span></p> 
-            <div class="facebook"></div>
-            <div class="instagram"></div>
-            <div class="twitter"></div>
-            <div class="pinterest"></div>
-            <div class="group"></div>
+                <div class="facebook"></div>
+                <div class="instagram"></div>
+                <div class="twitter"></div>
+                <div class="pinterest"></div>
+                <div class="group"></div>
         </div>
+        <section>
+            <div class="sectiontext"><p>Tabs with soft transitioning<br>effect. Explained propriety<br> of out perpetual his you.</p>
+            </div>
+                <div class="sectiontext2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque<br> penatibus et magnis dis parturient montes.<br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> bibendum laoreet.</p>
+            </div>
+            <div class="sectionbackground">
+            <div class="mountain">
+                <div class="smallblock">
+                    <div class="register"><p>REGISTER</p></div>
+                    <div class="apply"><p>APPLY</p></div>
+                    <div class="receive"><p>RECEIVE</p></div>
+                </div>
+                <div class="bigblock">
+                    <div class="row">
+                    <div class="bigblock1"></div>
+                    <div class="bigblock2"></div>
+                </div>
+                    <div class="bigblock3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blackblock">
+           <div class="blackblockshade">
+               <div class="cheshirecounty"></div>
+           </div> 
+        </div>
+        </section>
+
+   
+   
+   
     </main>
+   
+    
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          direction: 'vertical',
+          loop: true,
+      
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
+        </script>
 </body>
 </html>
