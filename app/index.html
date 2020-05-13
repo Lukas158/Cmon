@@ -17,9 +17,9 @@
             <ul>   
                 <a href>Features</a>
                 <a href>About</a>
-                <a href>Pricing</a>
-                <a href>Reviews</a>
-                <a href>Contact</a>
+                <a href="#pricing-section">Pricing</a>
+                <a href="#reviews-section">Reviews</a>
+                <a href="#contact-section">Contact</a>
             </ul>
         </header>
             
@@ -138,7 +138,7 @@
             <span>Proin gravida dolor sit amet lacus accumsan et viverra.</span>
         </div>
     </div>
-    <div class="blueblock"></div>
+    <div class="blueblock" id="pricing-section"></div>
     <div class="blueblockmaintext">PRICING OPTIONS</div>
     <div class="bluelinesmall"></div>
     <div class="blueblocksmalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -178,59 +178,75 @@
     <div class="basicbox5">WORDPRESS INTEGRATION</div>
     <div class="basicbox6">24/7 CUSTOMER SUPPORT</div>
 </div>
-<div class="swiperblock"></div>
+<div class="swiperblock" id="reviews-section"></div>
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 4</div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 1</div>
         ...
     </div>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
 
 </div>
+
     <div class="swiperblockmaintext">WHAT OUR CUSTOMERS ARE SAYING</div>
     <div class="swiperlinesmall"></div>
     
-
-
+    <div class="pinkcontactblock" id="contact-section"></div>
+    <div class="pinkblockmaintext">CONTACT US</div>
+    <div class="pinkblocksmalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 </article>
-
-
-   
-   
-   
+<footer>
+    <div class="footerblock">
+        
+        <div class="facebook1"></div>
+        <div class="instagram1"></div>
+        <div class="twitter1"></div>
+        <div class="pinterest1"></div>
+        <div class="group1"></div>
+        <div class="county"></div>
+</div>
+</footer>
     </main>
-   
-    <script src="file.js"></script>
+    
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-        var mySwiper = new Swiper ('.swiper-container', {
-          // Optional parameters
-          direction: 'vertical',
-          loop: true,
-      
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-      
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-      
-          // And if we need scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        })
-        </script>
+    <script>var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+    
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
+    </script>
+        
+        
+        <script src="script.js"></script>
 </body>
 </html>
