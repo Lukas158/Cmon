@@ -18,7 +18,9 @@ function eFunction() {
     var elmnt = document.getElementById("contact");
     elmnt.scrollIntoView({behavior: "smooth", block: "start", });
 }
-function fFunction() {
-    var elmnt = document.getElementById("main");
-    elmnt.scrollIntoView({behavior: "smooth", block: "start", });
-}
+
+
+
+
+
+
