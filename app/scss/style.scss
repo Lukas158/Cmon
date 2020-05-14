@@ -2,28 +2,27 @@
 
 * { 
     font-family: 'Montserrat', sans-serif;
-    max-width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-left: 0px;
+    
 }
 header {
     position: fixed;
     background-color: var(--juoda);
     height: 72px;
-    max-width: 1400px;
+    min-width: 1400px;
+    margin: auto;
     width: 100%;
     z-index: 9999;}
 ul {  
-        text-align: right;
+        display: inline-block;
+        margin-left: 690px;
         margin-top: 26px;
-        margin-right: 148px;
-        margin-left: 250px;
+        
      a {
         color: var(--balta);
         text-decoration: none;
         padding: 21px;
-        
         }
 }
 .smalllogo {
@@ -31,16 +30,15 @@ ul {
         width: 119.37px;
         height: 52.06px;
         z-index: 99999;
-        margin-left: 147px;
-        margin-top: 10px;
-        padding-right: 10px;
+        left: 147px;
+        top: 10px;
         position: absolute;
 }
 
 .miestas {
     background: url(images/miestas.png);
     height: 639px;
-    max-width: 1400px;
+    min-width: 1400px;
     width: 100%;
          .shade {
             background: url(images/shade.png);
@@ -97,15 +95,15 @@ ul {
     border: solid 2px white;
     width: 135px;
     height: 42px;
-}
-a {
+    a {
         text-align: center;
         text-decoration: none;
-        padding-left: 25px;
         color: white;}
+}
+
 .subbox {
     position: absolute;
-    left: 892px;
+    right: 385px;
     display: block;
     box-sizing: border-box;
 }
@@ -156,9 +154,10 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-shrink: 1;
     height: 105px;
     width: 100%;
-    max-width: 1400px;
+    min-width: 1400px;
     background-color: var(--balta);
     p {
     color: var(--juoda);
@@ -196,12 +195,12 @@ span {
 .sectionbackground {
     background: url(images/mountain.png);
     height: 595px;
-    max-width: 1400px;
+    min-width: 1400px;
     width: 100%;
 .mountain {
         background: url(images/featurespanel.png);
         height: 595px;
-        max-width: 1400px;
+        min-width: 1400px;
         width: 100%;
     }
 }
@@ -307,7 +306,7 @@ span {
 .blackblock {
         background: var(--balta);
         height: 595px;
-        max-width: 1400px;
+        min-width: 1400px;
         width: 100%;
         .blackblockshade {
             background: url(images/Featurespanel2.png);   
@@ -325,7 +324,7 @@ span {
     }
 }
 .blackblocktext {
-    min-width: 314px;
+    min-width: 514px;
     position: absolute;
     height: 80px;
     font-size: 30px;
@@ -344,6 +343,7 @@ span {
         font-weight: normal;
         font-size: 14px;
         margin-top: 27px;
+        min-width: 600px;
     }
 
 }
@@ -353,11 +353,14 @@ span {
     font-size: 14px;
     font-weight: normal;
     top: 1670px;
+    
    .title1 {
        margin-left: 837px;
+       min-width: 500px;
    }
     .title2 {
         margin-top: 60px;
+        min-width: 500px;
         margin-left: 837px;
     }
 }
@@ -438,7 +441,7 @@ span {
         margin-bottom: 27px;
 }
 .whiteblockicon1 {
-    width: 286px;
+    max-width: 286px;
     height: 194px;
     font-size: 20px;
     font-weight: normal;
@@ -455,7 +458,7 @@ span {
         color: #86878B;}
 }
 .whiteblockicon2 {
-    width: 242px;
+    max-width: 242px;
     height: 194px;
     font-size: 20px;
     font-weight: normal;
@@ -476,7 +479,7 @@ span {
 }
 
 .whiteblockicon3 {
-    width: 238px;
+    max-width: 238px;
     height: 194px;
     font-size: 20px;
     font-weight: normal;
@@ -500,7 +503,7 @@ span {
 .blueblock {
     top: 2599px;
     left: 0px;
-    width: 1400px;
+    min-width: 1400px;
     width: 100%;
     height: 883px;
     background-color: var(--melyna);
@@ -626,7 +629,7 @@ span {
 .swiperblock {
     top: 3410px;
     left: 0px;
-    width: 1400px;
+    min-width: 1400px;
     width: 100%;
     position: absolute;
     height: 883px;
@@ -651,24 +654,56 @@ span {
     background: var(--melyna);
 }
 .swiper-container {
-    top: 224.24px;
-    height: 214px;
-    width: 300px;
-    
-    
-    .swiper-slide  {
-        background-size: cover;
-        background-image: url(images/avatar.png);
-        display: flex;
-        width: 50px;
-        justify-content: center;
+    top: 200.24px;
+    position: absolute;
+    .swiper-wrapper {
+        display:flex ;
         align-items: center;
+        .swiper-slide {
+            height: 236px;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            flex-wrap: wrap;
+            img {
+              height: 70px;
+              position: relative;
+              margin-top: 130px;
+            }  
+        }
+        p {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            position: absolute;
+            background: var(--melyna);
+            color: var(--balta); 
+            border-radius: 8px;
+            height: 125px;
+            width: 273px;
+}  
+}
+    .swiper-pagination-bullet-active {
+        background-color: var(--rausva);
     }
+}
+.slidealign {
+    display: flex;
+    justify-content: flex-start;
+  
+}
+.nametag {
+    color: black;
+    margin-left: 80px;
+    margin-top: 0px;
+    position: absolute;
 }
 .pinkcontactblock {
     top: 4001px;
     left: 0px;
-    width: 1400px;
+    min-width: 1400px;
     width: 100%;
     height: 573px;
     position: absolute;
@@ -702,7 +737,7 @@ span {
     position: absolute;
     height: 124px;
     width: 100%;
-    max-width: 1400px;
+   width: 1400px;
     background-color: var(--juoda);
     .facebook1 {
         background: url(images/facebook1.png);
@@ -741,3 +776,49 @@ span {
     
 }
 
+@media only screen and (max-width: 1200px) {
+    ul {
+      display: none;
+    }  
+    }
+@media only screen and (max-width: 1200px) {
+    .burger {
+        width: 100px;
+        height: 72px;
+        right: 85px;
+        display: flex;
+        justify-content: center;
+        visibility: visible;
+        position: fixed;
+        background-color: var(--zalia);
+        margin: 0 auto;
+} 
+    .burger1 {
+        min-width: 35px;
+        height: 5px;
+        top: 15px;
+        visibility: visible;
+        position: absolute;
+        background-color: white;
+        margin: 6px 0;
+}
+.burger2 {
+    min-width: 35px;
+    height: 5px;
+    visibility: visible;
+    top: 25px;
+    position: fixed;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .burger3 {
+    min-width: 35px;
+    height: 5px;
+    visibility: visible;
+    top: 35px;
+
+    position: fixed;
+    background-color: white;
+    margin: 6px 0;
+  }
+}
