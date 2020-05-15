@@ -14,10 +14,23 @@
 <main>
 <header>
 <div  class="smalllogo" onclick="fFunction()"></div>
-<div class="burger">
+<div href="#home" id="burgeris" class="burger"
+class="active">
+    <div class="burgerbutton" id="myLinks">
+    <div class="myLink">
+        <a onclick="bFunction()">Features</a>
+        <a onclick="cFunction()">About</a>
+        <a onclick="aFunction()">Pricing</a>
+        <a onclick="dFunction()">Reviews</a>
+        <a onclick="eFunction()">Contact</a>
+    </div>
+      </div>
 <div class="burger1"></div>
 <div class="burger2"></div>
 <div class="burger3"></div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    
+  </a>
 </div>
 <ul> 
 <a onclick="bFunction()">Features</a>
@@ -58,8 +71,22 @@
                 <input type="number" id="number" name="number" placeholder="Phone number" required>
             </div>
             </div>
+            <div class="subtype">Type of subscription
+            <div class="radio">
+                <label class="container1">One
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container1">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+        </div>
+            </div>
         </div>
 </div>
+
             <button id="okButton" class="button"type="submit" value="Submit" enabled>GET STARTED</button>
         </form> 
             <div class="maintext">
@@ -158,11 +185,11 @@
             <span>Proin gravida dolor sit amet lacus accumsan et viverra.</span>
         </div>
     </div>
-    <div class="blueblock" id="pricing"></div>
+    <div class="blueblock" id="pricing">
     <div class="blueblockmaintext">PRICING OPTIONS</div>
     <div class="bluelinesmall"></div>
     <div class="blueblocksmalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="basicbox">
+        <div class="basicbox">
             <div class="basicboxblack1">Basic</div>
             <div class="basicboxblack2"><span>$</span>0</div>
             <div class="basicboxblack3">Free for Life</div>
@@ -198,6 +225,7 @@
     <div class="basicbox5">WORDPRESS INTEGRATION</div>
     <div class="basicbox6">24/7 CUSTOMER SUPPORT</div>
 </div>
+</div>
 <div id="reviews" class="swiperblock"></div>
 <div class="swiper-container">
     <!-- Additional required wrapper -->
@@ -225,7 +253,7 @@
             <div class="slidealign4">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
             <img src="images/avatar.png" alt="Avatar">
-            <div class="nametag">Susan</div>
+           
             
             
         </div>

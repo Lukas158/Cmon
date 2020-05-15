@@ -27,6 +27,51 @@ ul {
         padding: 21px;
         }
 }
+.burger {
+    position: absolute;
+    visibility: hidden;
+}
+
+.subtype {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input:checked  {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        background: red;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: black;
+      }   
+      
+      
+  }
+  input:checked  {
+    .checkmark {
+        background-color: red;
+    }
+  }
 .smalllogo {
         background: url(images/smalllogo.png);
         width: 119.37px;
@@ -727,6 +772,7 @@ span {
 }
 .swiper-container {
     top: 200.24px;
+    min-width: 1400px;
     position: absolute;
     .swiper-wrapper {
         display:flex ;
@@ -858,12 +904,33 @@ span {
         width: 100px;
         height: 72px;
         right: 85px;
+        cursor: pointer;
         display: flex;
         justify-content: center;
         visibility: visible;
         position: fixed;
+        text-align: center;
         background-color: var(--zalia);
         margin: 0 auto;
+        a {
+            display: flex;
+            align-items: center;
+            z-index: 99999;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+}
+.burgerbutton {
+    position: absolute;
+}
+.myLink {
+    margin-top: 70px;
+    cursor: pointers;
+    width: 100px;
+    background-color: var(--zalia);
 } 
     .burger1 {
         min-width: 35px;
