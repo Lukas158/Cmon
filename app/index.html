@@ -13,7 +13,7 @@
 <body>
 <main>
 <header>
-<div  class="smalllogo" onclick="fFunction()"></div>
+<div  class="smalllogo"></div>
 <div href="#home" id="burgeris" class="burger"
 class="active">
     <div class="burgerbutton" id="myLinks">
@@ -28,7 +28,7 @@ class="active">
 <div class="burger1"></div>
 <div class="burger2"></div>
 <div class="burger3"></div>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<a href="javascript:void(0);"  onclick="myFunction()">
     
   </a>
 </div>
@@ -272,7 +272,55 @@ class="active">
     <div id="contact" class="pinkcontactblock"></div>
     <div class="pinkblockmaintext">CONTACT US</div>
     <div class="pinkblocksmalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="pink-sub-box">
+    <div class="mid1">
+        <div class="container">Your details
+            <form name="myForm"  onsubmit="return validateForm()" method="post">
+                <div class="row">
+                <div class="col-25">
+                    <label for="fname"></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="First name" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' required>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="lname"></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Last name" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' required>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="number"></label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="number" name="number" placeholder="Phone number" required>
+                </div>
+                </div>
+                <div class="subtype">Type of subscription
+                <div class="radio">
+                    <label class="container1">One
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container1">Two
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+            </div>
+                </div>
+            </div>
+    </div>
+    
+                <button id="okButton" class="button1"type="submit" value="Submit" enabled>SEND</button>
+            </form>
+        </div>
 </article>
+
 <footer>
     <div class="footerblock">
         
@@ -282,6 +330,7 @@ class="active">
         <div class="pinterest1"></div>
         <div class="group1"></div>
         <div class="county"></div>
+
 </div>
 </footer>
     </main>
